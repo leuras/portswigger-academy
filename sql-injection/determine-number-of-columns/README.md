@@ -41,14 +41,18 @@ To solve the lab, determine the number of columns returned by the query by perfo
 
 **DISCOVERING THE AMOUNT OF COLUMNS**  
 The next two images shows the process to identify how many columns exists in the original SQL statement using Burp Suite.
-![](image01.png)
-![](image02.png)
+  
+![](images/image01.png)
+  
+![](images/image02.png)
 
 Evidence points out that there are 3 columns in the SQL statement. With that, just change the payload to get the result as shown in the following image:
-![](image03.png)
+  
+![](images/image03.png)
 
 And the application will produce an empty line at the bottom of the grid as the result of this SQL Injection exploitation:
-![](image04.png)
+  
+![](images/image04.png)
 
 ## Key Words
 > sql injection, union, column, count

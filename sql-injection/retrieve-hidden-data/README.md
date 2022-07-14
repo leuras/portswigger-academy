@@ -48,15 +48,17 @@ To solve the lab, perform an SQL injection attack that causes the application to
 
 **FILTER BY CATEGORY PAGE**  
 The image below shows how the application behaves when category's links are used to filter the products:
-![](image01.png)
+  
+![](images/image01.png)
 The application presents all the products of the chosen category as expected and produces a query string like: `/filter?category=filter?category=Pets`.
   
   
 **SQL INJECTION VULNERABILITY**  
 The next image presents the application bahavior when a malicious user injects the following payload into the query string: `/filter?category=filter?category=Pets'+or+0=0--`
-![](image02.png)
+  
+![](images/image02.png)
 Now, the filter doesn't respect the specified category and executes the following SQL statement:
-
+  
 ```sql
 SELECT * FROM products WHERE category = 'Pets' or 0=0--' AND released = 1
 ```

@@ -15,8 +15,8 @@ To solve this lab, perform a cross-site scripting attack that calls the alert fu
 
 **Burp Suite DOM Invader Extension**  
 The image below shows all occurrences found of the specified canary term in the application.
-
-![DOM-Invader canary highlight](image01.png)
+  
+![DOM-Invader canary highlight](images/image01.png)
 
 **JavaScript code executed when the page is loaded**
 ```javascript
@@ -33,7 +33,8 @@ if(query) {
 ```
 
 The image below presents the actual vulnerable javascript code mentioned on the code snipet above.
-![](image02.png)
+  
+![](images/image02.png)
 
 **Malicious Payload** 
 ```html 
@@ -41,8 +42,8 @@ leuras:bounty<img src="abc" onerror="javascript:alert(1)" />
 ```
 
 The following evidence shows how the application behaves when a malicious payload is sent through the `search` URL parameter.
-
-![XSS PoC](image03.png)
+  
+![XSS PoC](images/image03.png)
 
 ## Key Words
 > xss, bom-based, dom-invader

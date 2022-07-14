@@ -25,14 +25,18 @@ The lab will provide a random value that you need to make appear within the quer
 
 **DETERMINE THE AMOUNT OF COLUMNS**  
 The following picture shows the payload used in order to determine how many columns are present in the SQL statement:
-![](image01.png)
+  
+![](images/image01.png)
 
 Usually, developers order their queries by putting the ID first, followed by the name or description. The image highlight all points where each column is used:
-![](image02.png)
+  
+![](images/image02.png)
 
 The shot was to put the expected string in the second place, as a developer usually does:
-![](image03.png)
-![](image04.png)
+  
+![](images/image03.png)
+  
+![](images/image04.png)
 
 ## Key Words
 > sql injection, union, varchar, column

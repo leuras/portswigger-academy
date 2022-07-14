@@ -17,12 +17,12 @@ To solve this lab, perform a cross-site scripting attack that calls the alert fu
 
 **Burp Suite DOM Invader Extension**  
 The image below shows all occurrences found of the specified canary term in the application.
-
-![DOM-Invader canary highlight](image1.png)
+  
+![DOM-Invader canary highlight](images/image1.png)
 
 The following evidence shows how the application behaves when a malicious payload is sent through the `search` URL parameter.
-
-![XSS PoC](image2.png)
+  
+![XSS PoC](images/image2.png)
 
 ## Key Words
 > xss, dom-based, dom-invader
