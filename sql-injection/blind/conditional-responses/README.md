@@ -76,4 +76,4 @@ for char in string.printable:
 ![Login as administrator](images/image04.png)
 
 ## Key Words
-> sql injection, blind, cookie, python
+> sql injection, blind, cookie, python, exploit
