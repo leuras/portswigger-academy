@@ -7,7 +7,7 @@ WIP: This repository tracks my progress in PortSwigger Web Security Academy labs
 1. [SQL injection](sql-injection)
     - [Retrieval of hidden data](sql-injection/retrieve-hidden-data)
     - [Login bypass](sql-injection/login-bypass)
-    - Filter bypass via XML encoding
+    - [Filter bypass via XML encoding](sql-injection/filter-bypass-via-xml-encoding)
     - [Union](sql-injection/union)
         - [Determining the number of columns returned by the query](sql-injection/union/determine-number-of-columns)
         - [Finding a column containing text](sql-injection/union/find-column-containing-text)
