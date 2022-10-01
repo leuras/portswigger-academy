@@ -25,5 +25,13 @@ WIP: This repository tracks my progress in PortSwigger Web Security Academy labs
         - [Time delays and information retrieval](sql-injection/blind/time-delays-info-retrieval)
         - [Out-of-band](sql-injection/blind/out-of-band)
         - [Out-of-band with data exfiltration](sql-injection/blind/out-of-band-data-exfiltration)
+2. [Authentication](authentication)
+    - [Password based](authentication/password-based)
+        - Username enumeration via different responses
+        - Username enumeration via subtly different responses
+        - Username enumeration via response timing
+        - Broken brute-force protection, IP block
+        - Username enumeration via account lock
+        - Broken brute-force protection, multiple credentials per request
             
 
