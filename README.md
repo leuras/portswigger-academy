@@ -17,7 +17,7 @@ WIP: This repository tracks my progress in PortSwigger Web Security Academy labs
         - [Querying the database type and version on Oracle](sql-injection/examining-the-database/querying-database-version-oracle)
         - [Querying the database type and version on MySQL and Microsoft](sql-injection/examining-the-database/querying-database-version-mysql-microsoft)
         - [Listing the database contents on non-Oracle databases](sql-injection/examining-the-database/listing-database-contents-non-oracle)
-        - Listing the database contents on Oracle
+        - [Listing the database contents on Oracle](sql-injection/examining-the-database/listing-database-contents-oracle)
     - [Blind SQL injection](sql-injection/blind)
         - [Conditional responses](sql-injection/blind/conditional-responses)
         - [Conditional errors](sql-injection/blind/conditional-errors)
