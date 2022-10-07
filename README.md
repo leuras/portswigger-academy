@@ -27,7 +27,7 @@ WIP: This repository tracks my progress in PortSwigger Web Security Academy labs
         - [Out-of-band with data exfiltration](sql-injection/blind/out-of-band-data-exfiltration)
 2. [Authentication](authentication)
     - [Password based](authentication/password-based)
-        - Username enumeration via different responses
+        - [Username enumeration via different responses](authentication/password-based/username-enumeration-via-different-responses)
         - Username enumeration via subtly different responses
         - Username enumeration via response timing
         - Broken brute-force protection, IP block
