@@ -28,7 +28,7 @@ WIP: This repository tracks my progress in PortSwigger Web Security Academy labs
 2. [Authentication](authentication)
     - [Password based](authentication/password-based)
         - [Username enumeration via different responses](authentication/password-based/username-enumeration-via-different-responses)
-        - Username enumeration via subtly different responses
+        - [Username enumeration via subtly different responses](authentication/password-based/username-enumeration-via-subtly-different-responses)
         - Username enumeration via response timing
         - Broken brute-force protection, IP block
         - Username enumeration via account lock
